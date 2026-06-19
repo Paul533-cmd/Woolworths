@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://paul533-cmd.github.io/Woolworths//sitemap.xml

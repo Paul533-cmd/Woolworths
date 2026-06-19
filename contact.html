@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Woolworths customer support, find store locations and send us a message.">
+    <meta name="keywords" content="Woolworths, South Africa, food, clothing, homeware, groceries, shopping">
+    <meta name="author" content="Paul Katlego Monama">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Contact Woolworths | Customer Support and Store Locations</title>
+
+     <!-- Favicon -->
+    <link rel="icon" type="png" href="_images/favicon.png" loading="lazy">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--Leaflet-->
+    <link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- External stylesheet -->
+      <link rel="stylesheet" href="css_assets/style.css">
+</head>
+
+<body>
+
+    <!--Header Section (Navigation + Logo)--> 
+   <header>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="_images/woolworths_logo.png" alt="Woolworths Logo" class="logo" loading="lazy">
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="about_us.html">About Us</a></li>
+
+            <li><a href="enquiries.html">Enquiries</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+    <!-- Main content goes here -->
+     <main>
+         <!-- Contact Hero Section -->
+         <section class="contact-header">
+
+            <h1>Contact Us</h1>
+
+            <p>
+              Get in touch with Woolworths for customer support, store enquiries, or product information.
+            </p>
+
+         </section>
+
+         <!-- Contact Information Section -->
+         <section class="contact-layout">
+            <div class="contact-info">
+
+              <h2>Customer Support</h2>
+
+              <p>
+                Email:
+                 <a href="mailto:custserv@woolworths.co.za">
+                    custserv@woolworths.co.za
+                 </a>
+              </p>
+
+              <p>Call us on: 0860 022 002</p>
+
+              <h3>Call Centre Operating Hours</h3>
+
+              <ul>
+                 <li>Monday - Friday: 8am - 5:30pm</li>
+                 <li>Saturday: 8am - 5pm</li>
+                 <li>Sunday: 9am - 1pm</li>
+                 <li>Public Holidays: 9am - 1pm</li>
+                 <li>Christmas and New Year’s Day: Closed</li>
+              </ul>
+
+           </div>
+
+           <!-- Store Locations -->
+
+           <div class="contact-map">
+
+              <h2>Store Locations</h2>
+
+              <div id="map"></div>
+
+           </div>
+
+        </section>
+
+        <!-- Enquiry Form -->
+        <section class="contact-form-section">
+
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm">
+
+               <label for="contactName">
+                  Full Name
+               </label>
+
+            <input type="text"
+               id="contactName"
+               required
+               minlength="3">
+
+            <label for="contactEmail">
+                Email Address
+             </label>
+
+            <input type="email"
+                   id="contactEmail"
+                   required>
+
+            <label for="contactPhone">
+                Phone Number
+             </label>
+
+            <input type="tel"
+                 id="contactPhone"
+                   pattern="[0-9]{10}"
+                    placeholder="0821234567"
+                  required>
+
+            <label for="messageType">
+                Message Type
+            </label>
+
+            <select id="messageType" required>
+
+                  <option value="">
+                     Select an Option
+                  </option>
+
+                  <option value="General Enquiry">
+                     General Enquiry
+                  </option>
+
+                  <option value="Product Enquiry">
+                    Product Enquiry
+                  </option>
+
+                <option value="Complaint">
+                    Complaint
+                  </option>
+
+                <option value="Compliment">
+                     Compliment
+                  </option>
+
+            </select>
+
+            <label for="message">
+                Message
+            </label>
+
+             <textarea id="message"
+                      rows="6"
+                        minlength="20"
+                      required>
+             </textarea>
+
+            <button type="submit">
+                 Send Message
+            </button>
+
+         </form>
+
+         <div id="contactResponse"></div>
+
+     </section>
+     </main>
+
+     <!-- Footer section -->
+       <footer>
+
+        <table border="1" width="100%" align="center">
+          <tr>
+            <td align="center">
+             &copy; 2026 Woolworths. All rights reserved.
+            </td>
+          </tr>
+        </table>
+        
+      </footer>
+      
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+      <script src="js_assets/script.js"></script>
+
+</body>
+</html>

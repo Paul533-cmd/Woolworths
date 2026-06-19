@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Woolworths food, clothing and homeware products designed for quality and everyday living.">
+    <meta name="keywords" content="Woolworths, South Africa, food, clothing, homeware, groceries, shopping">
+    <meta name="author" content="Paul Katlego Monama">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Woolworths Products | Food, Clothing and Homeware</title>
+
+     <!-- Favicon -->
+    <link rel="icon" type="png" href="_images/favicon.png" loading="lazy">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External stylesheet -->
+      <link rel="stylesheet" href="css_assets/style.css">
+</head>
+
+<body>
+
+    <!--Header Section (Navigation + Logo)--> 
+    <header>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="_images/woolworths_logo.png" alt="Woolworths Logo" class="logo" loading="lazy">
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="about_us.html">About Us</a></li>
+
+            <li><a href="enquiries.html">Enquiries</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+    <!-- Main content goes here -->
+     <main>
+      <h1>Our Products</h1>
+
+      <p>Woolworths offers different types of products including food, clothing and homeware, you can also find flowers. By the Food department they offer Everyday Shopping where there are options like Ready Meals, Pantry and etc, all they you can think of in your everyday shopping cart. They also include Shop Promotions and Stock up options department like Household, Cleaning etc. For the Clothing section it includes men’s, women’s and children’s fashion. Prices can differ depending on the product and its quality, for e.g. in the Bakery & Desserts section there is 4 pack chocolate muffins that go for as low as R52.99 and many more including the Clothing Department you can find good prices for quality clothing.</p>
+      
+      <!-- Product Search -->
+        <section class="search-section">
+
+            <input
+               type="text"
+                id="productSearch"
+              placeholder="Search products..."
+            >
+        </section>
+
+     <section class="products-grid">
+
+      <div class="product-card" data-category="food">
+        <!--Image Reference:Jeremy, B., 2019. [An Image of Readymade Salad]. [electronic print] Accessed at : https://unsplash.com/photos/cooked-shrimp-dish-w_z0RJCSBiE [Accessed 10 April 2026].-->
+         <img src="_images/readymade.jpg" alt="Fresh Woolworths ready-made salad meal" class="gallery-image" loading="lazy">
+
+         <h3>Fresh Food</h3>
+
+         <p>R104.99</p>
+
+         <button class="cart-btn">
+          Add to Cart
+         </button>
+      </div>
+
+      <div class="product-card" data-category="clothing">
+        <!--Image Reference:Jeremy, B., 2019. [An Image of Clothing placed with a flower and watch]. [electronic print] Accessed at : https://unsplash.com/photos/orange-knit-cap-jlo7Bf4tUoY [Accessed 10 April 2026].--> 
+
+         <img src="_images/clothing_knitwear.jpg" alt="Woolworths knitwear clothing collection" class="gallery-image" loading="lazy">
+
+         <h3>Clothing</h3>
+
+         <p>R1025</p>
+
+         <button class="cart-btn">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card" data-category="homeware">
+         <!--Image Reference: Jeremy, B., 2023. [A image of a-white-table-with-two-candles-and-a-book]. [electronic print] Accessed at :https://unsplash.com/photos/a-white-table-with-two-candles-and-a-book-_pvJOtgPaD4[Accessed 10 April 2026].-->
+
+         <img src="_images/homware_candles.jpg" alt="Woolworths homeware candle display" class="gallery-image" loading="lazy">
+
+         <h3>Homeware</h3>
+
+         <p>R150 each</p>
+
+         <button class="cart-btn">
+          Add to Cart
+        </button>
+     </div>
+
+
+
+    </section>
+
+         <!-- Lightbox -->
+
+        <div id="lightbox" class="lightbox">
+
+            <span id="closeLightbox">&times;</span>
+
+            <img id="lightboxImage"
+                 src=""
+                alt="Expanded Product Image">
+
+        </div>
+
+
+     </main>
+
+     <!-- Footer section -->
+       <footer>
+
+        <table border="1" width="100%" align="center">
+          <tr>
+            <td align="center">
+             &copy; 2026 Woolworths. All rights reserved.
+            </td>
+          </tr>
+        </table>
+        
+      </footer>
+
+      <script src="js_assets/script.js"></script>
+
+</body>
+</html>

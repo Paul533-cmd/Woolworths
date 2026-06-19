@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Send product and service enquiries to Woolworths South Africa.">
+    <meta name="keywords" content="Woolworths, South Africa, food, clothing, homeware, groceries, shopping">
+    <meta name="author" content="Paul Katlego Monama">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Product Enquiries | Woolworths South Africa</title>
+
+     <!-- Favicon -->
+    <link rel="icon" type="png" href="_images/favicon.png" loading="lazy">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External stylesheet -->
+      <link rel="stylesheet" href="css_assets/style.css">
+</head>
+
+<body>
+
+    <!--Header Section (Navigation + Logo)--> 
+   <header>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="_images/woolworths_logo.png" alt="Woolworths Logo" class="logo" loading="lazy">
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="about_us.html">About Us</a></li>
+
+            <li><a href="enquiries.html">Enquiries</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+    <!-- Main content goes here -->
+<main>
+
+    <h1>Product Enquiries</h1>
+
+    <p>
+        Use the form below to enquire about Woolworths products,
+        availability and estimated pricing.
+    </p>
+
+    <form id="enquiryForm">
+
+    <label for="fullName">
+        Full Name
+    </label>
+
+    <input type="text"
+           id="fullName"
+           name="fullName"
+           required
+           minlength="3"
+           maxlength="50"
+           placeholder="Enter your full name">
+
+    <label for="email">
+        Email Address
+    </label>
+
+    <input type="email"
+           id="email"
+           name="email"
+           required
+           placeholder="example@email.com">
+
+    <label for="phone">
+        Phone Number
+    </label>
+
+    <input type="tel"
+           id="phone"
+           name="phone"
+           pattern="[0-9]{10}"
+           placeholder="0821234567"
+           required>
+
+    <label for="product">
+        Select Product Category
+    </label>
+
+    <select id="product"
+            name="product"
+            required>
+
+        <option value="">
+            Choose a Product
+        </option>
+
+        <option value="104.99">
+            Fresh Food
+        </option>
+
+        <option value="1025">
+            Clothing
+        </option>
+
+        <option value="150">
+            Homeware
+        </option>
+
+    </select>
+
+    <label for="quantity">
+        Quantity
+    </label>
+
+    <input type="number"
+           id="quantity"
+           name="quantity"
+           min="1"
+           max="20"
+           required>
+
+    <label for="deliveryDate">
+        Preferred Collection Date
+    </label>
+
+    <input type="date"
+           id="deliveryDate"
+           name="deliveryDate"
+           required>
+
+    <button type="submit">
+        Check Availability
+    </button>
+
+</form>
+
+<div id="responseMessage"></div>
+
+    <div id="responseMessage"></div>
+
+     </main>
+
+     <!-- Footer section -->
+       <footer>
+
+        <table border="1" width="100%" align="center">
+          <tr>
+            <td align="center">
+             &copy; 2026 Woolworths. All rights reserved.
+            </td>
+          </tr>
+        </table>
+        
+      </footer>
+
+      <script src="js_assets/script.js"></script>
+
+</body>
+</html>
