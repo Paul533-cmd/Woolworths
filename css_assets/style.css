@@ -513,9 +513,7 @@ button:hover{
     }
 }
 
-/* =========================
-   CONTACT FORM
-========================= */
+/*CONTACT FORM*/
 
 #contactForm{
     max-width: 700px;
@@ -672,4 +670,5 @@ button:hover{
     border-radius: 10px;
 
     margin-top: 20px;
+
 }
