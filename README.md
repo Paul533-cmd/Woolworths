@@ -21,3 +21,13 @@ Backlinks could be obtained through:
 - Business directories
 - Retail partnerships
 - Social media profiles
+
+## Page Speed Optimisation
+
+The website was optimised by:
+
+- Using external CSS and JavaScript files.
+- Compressing images before upload.
+- Using descriptive image names.
+- Implementing lazy loading on images.
+- Reducing unnecessary code.
